@@ -23,9 +23,11 @@
   As a Data Analyst and Scientist at XYZ Enterprise, you will play a crucial role in extracting valuable information from complex datasets, identifying trends, and providing actionable recommendations. Your expertise will contribute to enhancing decision-making processes and driving the company's growth.
       </p>
       <h2 class="text-center mt-2 mb-4">Open Job Listings</h2>
-      <p>
-        {{jobs}}
-      </p>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
       <div class= "text-center">
       <button class= "btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2023, Shameel</p>
